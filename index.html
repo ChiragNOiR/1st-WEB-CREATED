@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Beginning of head -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <title>Home page</title>
+</head>
+<!-- End of head -->
+
+<!-- Beginning of body section -->
+
+<body>
+
+  <!-- Beginning of div class for home -->
+  <div class="home">
+    <!-- Nav bar -->
+    <!-- Head Start -->
+    <header>
+      <a class="logo" href="/"><img src="images/loogoo.png" alt="logo" width="100" /></a>
+      <nav>
+        <!-- using unordered list to create navigation bar content -->
+        <ul class="nav__links">
+          <li><a href="#">Home</a></li>
+          <li><a href="./pages/blog.html">Blogs</a></li>
+          <li><a href="/pages/projects.html">Project</a></li>
+          <li><a href="/pages/about.html">About</a></li>
+          <li><a href="/pages/research.html">Research</a></li>
+        </ul>
+        <!-- End of unordered list -->
+      </nav>
+      <a class="cta" href="/pages/contact.html">Contact</a>
+      <p class="menu cta">Menu</p>
+    </header>
+    <!-- header end -->
+
+
+    <!-- Description -->
+    <div class="home-section">
+      <div class="container">
+        <div class="row full-screen align-items-center">
+          <div class="home-text">
+            <p>Hello</p>
+            <h2>I'm Chirag</h2>
+            <h1>Student & Gamer</h1>
+            <a href="/pages/about.html" class="btn-1 outer-shadow hover-in-shadow">More About Me</a>
+          </div>
+          <div class="home-img">
+            <div class="img-box inner-shadow">
+              <img src="images/profile.png" class="outer-shadow" alt="Profile Pic" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Responsive menu Start -->
+    <div id="mobile__menu" class="overlay">
+      <a class="close">&times;</a>
+      <div class="overlay__content">
+        <a href="#">Home</a>
+        <a href="/pages/blog.html">Blogs</a>
+        <a href="/pages/projects.html">Project</a>
+        <a href="/pages/about.html">About</a>
+        <a href="/pages/research.html">Research</a>
+        <a href="/pages/contact.html">Contact</a>
+
+      </div>
+    </div>
+    <!-- Responsive menu End -->
+    <script type="text/javascript" src="./js/nav_mobile.js"></script>
+</body>
+<!-- End of body section -->
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Beginning of head -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  
+  <!--Liking javascript for form validation-->
+  <script defer src="../js/form_val.js"></script>
+  
+</head>
+<!-- End of head -->
+
+<!-- Beginning of body section -->
+
+<body>
+
+  <!-- Beginning of div for class contact -->
+  <div class="contact">
+    <!-- Nav bar -->
+    <header>
+      <a class="logo" href="/"><img src="../images/loogoo.png" alt="logo" width="100" /></a>
+      <nav>
+        <!-- using unordered list to create navigation bar content -->
+        <ul class="nav__links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="/pages/blog.html">Blogs</a></li>
+          <li><a href="/pages/projects.html">Project</a></li>
+          <li><a href="/pages/about.html">About</a></li>
+          <li><a href="/pages/research.html">Research</a></li>
+        </ul>
+        <!-- End of unordered list -->
+      </nav>
+      <a class="cta" href="/pages/contact.html">Contact</a>
+      <p class="menu cta">Menu</p>
+    </header>
+    <!-- End of navigation bar -->
+
+    <!-- About body -->
+
+    <!-- Creating div class for id error -->
+    <div id="error"></div>
+
+    <!-- Creating div class for class page heading -->
+    <div class="page-heading">Contact</div>
+    <div class="contact-wrapper">
+
+      <!-- Beginning of div for class contact-form -->
+      <div class="contact-form">
+        <h1>Contact Form</h1>
+
+        <!-- Start of the form tag -->
+        <form name="form" onsubmit="return validate()">
+          <input type="text" name="name" id="name" placeholder="Full Name" />
+          <input type="email" name="email" id="email" placeholder="Email" />
+          <textarea name="" id="" placeholder="Description" cols="30" rows="10"></textarea>
+          <input type="submit" value="Send" />
+        </form>
+        <!-- End of the form tag -->
+      </div>
+      <!-- End of the div for class contact-form -->
+
+      <!-- Beginning of div for class contact-detail -->
+      <div class="contact-detail">
+        <h1>Contact detail</h1>
+        <div class="detail-list">
+          <div class="detail-item">
+            <div class="detail-icon">
+              <span class="fa fa-map-marker"></span>
+            </div>
+            <div class="detail-text">Kirtipur, Kathmandu</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-icon"><span class="fa fa-phone"></span></div>
+            <div class="detail-text">+977 9861015731</div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-icon">
+              <span class="fa fa-facebook"></span>
+            </div>
+            <a class="detail-text" href="https://facebook.com/pokharelchirag">facebook.com/chirag</a>
+          </div>
+          <div class="detail-item">
+            <div class="detail-icon">
+              <span class="fa fa-instagram"></span>
+            </div>
+            <a class="detail-text" href="https://www.instagram.com/chirag_pokharel/?hl=en">instagram.com/chirag</a>
+          </div>
+          <div class="detail-item">
+            <div class="detail-icon">
+              <span class="fa fa-twitter"></span>
+            </div>
+            <a class="detail-text" href="https://twitter.com/ChiragPokharel">twitter.com/chirag</a>
+          </div>
+        </div>
+      </div>
+      <!-- End of div for class contact-detail -->
+    </div>
+  </div>
+  <!-- End of dv for class contact -->
+</body>
+<!-- End of body section -->
+
+</html>
